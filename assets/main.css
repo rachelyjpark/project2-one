@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  position: fixed;
+  background: #EAD9D7;
+}
+
+
+
+#square {
+  position: fixed;
+  bottom: 0;
+  left: 0vh;
+    height: 80vh;
+  width: 70vh;
+  background-color: #EAD9D7;
+}
+
+
+#parallel1 {
+  position: absolute;
+  top: -6px;
+  left: 142px;
+  width: 580px;
+  height: 170px;
+  transform: skew(-60deg);
+  background: #BB9A96;
+} 
+#parallel2 {
+  position: absolute;
+bottom: 0;
+top: 277.3px;
+left: 375px;
+  width: 700px;
+  height: 300px;
+  transform: rotate(-90deg) scaleX(-1) skew(-30deg);
+  background: #C6A7A4;
+  z-index: 3;
+
+}
+
+#cube {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  top: -9.52px;
+  left: 875px;
+    height: 700px;
+  width: 570px;
+  background-color: #E1CBC9;
+  z-index: 5;
+}
+#par-top {
+      position: fixed;
+  top: 60px;
+  left: 30px;
+  font-size:40px;
+font-family: juniper-std, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+  padding-right: 0%;
+  z-index: 10;
+  transform: skewY(-0.2deg) skewX(0deg);
+  letter-spacing: 2px;
+
+
+}
+
+#par-side {
+    position: fixed;
+  top: -40px;
+  left: 600px;
+  font-size: 18px;
+font-family: juniper-std, sans-serif;
+font-weight: 400;
+font-style: normal;
+  padding-right: 40%;
+  z-index: 10;
+  transform: skewX(1deg) skewY(-30deg);
+}
+
+#par1 {
+ position: fixed;
+  top: 200px;
+  font-size: 18px;
+  font-family: linotype-sabon,sans-serif;
+font-weight: 400;
+font-style: normal;
+  z-index: 10;
+  padding-left: 2%;
+ padding-right: 62%;
+ line-height: 1.5;
+}
+#par2 {
+
+    position: fixed;
+  top: 40px;
+  left: 950px;
+  font-size: 18px;
+  font-family: linotype-sabon,sans-serif;
+font-weight: 400;
+font-style: normal;
+  z-index: 10;
+    padding-right: 5%;
+ line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+#square {
+  position: fixed;
+  bottom: 0;
+  top: 100px;
+  left: -250px;
+    height: 70px;
+  width:400px;
+  background-color: black;
+
+}
+
+@media (max-width: 600px) {
+#parallel1 {
+ position: absolute;
+  top: 100px;
+  left: -250px;
+  width: 480px;
+  height: 70px;
+  transform: skew(-60deg);
+  background: #BB9A96;
+
+}
+
+@media (max-width: 600px) {
+#parallel2 {
+  position: absolute;
+bottom: 0;
+top: 375px;
+left: -70px;
+  width: 600px;
+  height: 120px;
+  transform: rotate(-90deg) scaleX(-1) skew(-30deg);
+  background: #C6A7A4;
+  z-index: 3;
+
+
+}
+@media (max-width: 600px) {
+#cube {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  top: 100px;
+  left: 290px;
+    height: 600px;
+  width: 300px;
+  background-color: #E1CBC9;
+  z-index: 5;
+
+
+}
+
+
