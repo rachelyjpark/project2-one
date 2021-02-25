@@ -87,6 +87,137 @@ font-style: normal;
 	transform: rotate(-45deg);
 
 }
+@keyframes glow {
+  0% {
+    background: rgba(136, 106, 55, 0.05);
+  }
+  50% {
+    background: rgba(223, 185, 69, 0.85);
+  }
+  100% {
+    background: rgba(136, 106, 55, 0.05);
+  }
+}
+
+@keyframes bug1 {
+  0% {
+    left: 0%;
+    top: 85%;
+  }
+  50% {
+    left: 70%;
+    top: 70%;
+  }
+  100% {
+    left: 100%;
+    top: 83%;
+  }
+}
+
+@keyframes bug2 {
+  0% {
+    left: 0%;
+    top: 85%;
+  }
+  50% {
+    left: 60%;
+    top: 70%;
+  }
+  100% {
+    left: 100%;
+    top: 85%;
+  }
+}
+@keyframes bug3 {
+  0% {
+    left: 0%;
+    top: 90%;
+  }
+  50% {
+    left: 65%;
+    top: 60%;
+  }
+  100% {
+    left: 100%;
+    top: 95%;
+  }
+}
+
+@keyframes bug4 {
+  0% {
+    left: 0%;
+    top: 87%;
+  }
+  50% {
+    left: 75%;
+    top: 60%;
+  }
+  100% {
+    left: 100%;
+    top: 90%;
+  }
+}
+
+.firefly {
+  position: fixed;
+  width: 3rem; /*1.8 * 10 =18px */
+  height: 3rem;
+  background: rgba(136, 106, 55, 0.05);
+  border-radius: 50%;
+  filter: blur(3px);
+  /* animation: glow 4s ease-in-out infinite; */
+}
+
+.firefly:hover {
+  animation-play-state: running, paused;
+  cursor: grabbing;
+}
+
+.firefly:nth-child(1) {
+  left: 60%;
+  top: 63%;
+  animation-name: glow, bug1;
+  animation-duration: 4s, 18s;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-delay: 3s, 2s; /* first: start glowing, second: start moving */
+}
+
+.firefly:nth-child(2) {
+  left: 13%;
+  top: 90%;
+  animation-name: glow, bug2;
+  animation-duration: 6s, 23s;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-delay: 3s, 2s;
+}
+
+.firefly:nth-child(3) {
+  left: 89%;
+  top: 3%;
+  animation-name: glow, bug3;
+  animation-duration: 2s, 20s;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-delay: 3s, 2s;
+}
+
+.firefly:nth-child(4) {
+  left: 22%;
+  top: 40%;
+  animation-name: glow, bug4;
+  animation-duration: 7s, 18s;
+  animation-timing-function: ease-in-out, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-delay: 3s, 2s;
+}
+
+}
+{
+
+}
+
 
 @media (max-width: 600px) {
 	#square {
